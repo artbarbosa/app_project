@@ -1,16 +1,28 @@
-# app_project
+# Flutter Login and Posts Study
 
-A new Flutter project.
+A small Flutter study with login and splash screens, a posts list, detail navigation, controller/repository separation and local preferences.
 
-## Getting Started
+## Stack and SDK
 
-This project is a starting point for a Flutter application.
+- Flutter and Dart.
+- Dio and Shared Preferences.
+- Dart SDK constraint: `>=2.12.0 <3.0.0`.
 
-A few resources to get you started if this is your first Flutter project:
+Use a Flutter release with a Dart SDK inside that range.
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+## Structure
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- `lib/controllers/`: login and home controllers.
+- `lib/models/`: post model.
+- `lib/repositories/`: repository contract, implementation and mock.
+- `lib/pages/`: splash, login, home and details.
+- `lib/services/`: local preferences helper.
+
+## Run
+
+```bash
+flutter pub get
+flutter run
+```
+
+This repository preserves a historical learning implementation. Review the repository implementation and service configuration before adapting it to a new application.
